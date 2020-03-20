@@ -42,6 +42,9 @@ public class ExC extends AbstractCenteredComponent implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int answer = JOptionPane.showConfirmDialog(null, "Voulez-vous sortir ?");
+                if (answer == JOptionPane.YES_OPTION) {
+                    System.exit(0);
+                }
             }
         });
 
